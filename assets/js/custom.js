@@ -155,9 +155,9 @@
 			else {
 					 $.ajax({
 							type        : 'POST', // define the type of HTTP verb we want to use (POST for our form)
-							url         : 'assets/php/contact.php', // the url where we want to POST
+							url         : 'https://getsimpleform.com/messages?form_api_token=6c934adc5f4c425ed785d257d51f64d9', // the url where we want to POST
 							data        : formData, // our data object
-							dataType    : 'json', // what type of data do we expect back from the server
+							dataType    : 'jsonp', // what type of data do we expect back from the server
 							encode      : true,
 							success		: function(res){
 											var ret = $.parseJSON(JSON.stringify(res));
