@@ -253,7 +253,7 @@
 
 				<div class="col-sm-6 col-sm-offset-3">
 
-					<form action="https://getsimpleform.com/messages?form_api_token=6c934adc5f4c425ed785d257d51f64d9" id="contact-form" role="form">
+					<form action="https://getsimpleform.com/messages?form_api_token=6c934adc5f4c425ed785d257d51f64d9" id="contact" role="form">
 						<div class="ajax-hidden">
 							<div class="form-group wow fadeInUp">
 								<label class="sr-only" for="c_name">Nome</label>
@@ -268,7 +268,9 @@
 							<div class="form-group wow fadeInUp" data-wow-delay=".2s">
 								<textarea class="form-control" id="c_message" name="c_message" rows="7" placeholder="Mensagem"></textarea>
 							</div>
-
+							
+							<input type='hidden' name='redirect_to' value='http://www.romeumattos.com.br' />
+							
 							<button type="submit" class="btn btn-lg btn-block wow fadeInUp" data-wow-delay=".3s">Enviar Mensagem</button>
 						</div>
 						<div class="ajax-response"></div>
